@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+*,
+*::after,
+*::before{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+ font-family: 'Ubuntu', sans-serif;
+ 
+}
+
+.login__section {
+  max-width: 1100px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-top: 2em;
+  margin-left: 1.5em;
+}
+
+.background-img{
+  display: none;
+}
+
+.signup__container1{
+display: none;
+}
+
+.signup__heading--1{
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.signup__heading--2{
+  font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.signup--paragraph{
+  font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.signup--paragraph--2{
+  color: blue;
+}
+
+.label-email{
+  display: block;
+  margin-bottom: 8px;
+}
+
+#email {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: aliceblue;
+  border: none;
+  padding: 5px;
+  margin-bottom: 10px
+}
+
+.form--btn-bx{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
+}
+
+.btn--form{
+  background-color: blue;
+  color: white;
+  border-radius: 50px;
+  padding: 8px 1.2em;
+  font-size: 1.2rem;
+  margin-bottom: 1.2em;
+}
+
+.signup__paragraph {
+  position: relative;
+  max-width: 500px;
+  text-align: center;
+}
+
+.signup__paragraph::before{
+  content: '';
+  display: block;
+  height: 2px;
+  width: 150px;
+  background-color: rgba(0, 0, 0, 0.161);
+  position: absolute;
+  top: 50%;
+  left: 0; 
+}
+
+.signup__paragraph::after{
+  content: '';
+    display: block;
+    height: 2px;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.161);
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.signup__btn{
+  margin-top: 1.2em;
+}
+
+.btn--google{
+  display: block;
+  background-color: white;
+  color: black;
+  padding: 10px 6em;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+.btn--facebook {
+  display: block;
+  background-color: blue;
+  color: white;
+  padding: 10px 5.8em;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+.btn--apple {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 10px 6.3em;
+  border-radius: 50px;
+}
+
+
+@media only screen and (min-width: 500px) {
+ 
+  .background-img {
+      display: block;
+      height: 80vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top;
+     }
+
+    
+   .login__section {
+          background-color: white;
+          width: 25em;
+         height: 35em;
+         display: flex;
+         flex-direction: column;
+         align-content: flex-start;
+         align-items: flex-start;
+        padding-left: 2em;
+        margin-left: auto;
+        margin-right: auto;
+   }
+
+   
+
+     #email {
+            display: block;
+           width: 130%;
+           margin-bottom: 8px;
+           background-color: aliceblue;
+            border-bottom: 2px solid gray;
+            padding: 5px;
+            margin-bottom: 10px;
+      }
+        
+   
+}
+
+@media only screen and (min-width: 1250px) {
+  .background-img {
+       height: 100vh;
+      
+    }
+
+    .signup{
+      display: flex;
+      flex-direction: column;
+      align-content: space-evenly;
+    }
+
+    .signup__container1 {
+      display: flex;
+    }
+ 
+  .signup__container-bx {
+       margin-top: 10em;
+      margin-left: 5em;
+      margin-right: 5em;
+      
+  }
+    .signup__container1-heading{
+      color: white;
+      font-size: 5rem;
+      font-weight: 700;
+      
+    }
+
+    .login__section{
+      height: 30em;
+      margin-top: -10em;
+      margin-right: 5em;
+      margin-bottom: 10em;
+      padding-top: 2em;
+    }
+
+    
+}
+
+
+
